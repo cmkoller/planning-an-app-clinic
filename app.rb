@@ -10,8 +10,3 @@ Dir[File.join(File.dirname(__FILE__), 'lib', '**', '*.rb')].each do |file|
   require file
   also_reload file
 end
-
-get '/' do
-  @title = "Hello World"
-  erb :index
-end
